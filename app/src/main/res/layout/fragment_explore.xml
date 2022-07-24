@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Explore"></TextView>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_weight="1"-->
+<!--        android:id="@+id/bottomNavigationBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:elevation="0dp"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        app:itemActiveIndicatorStyle="@color/purple_500"-->
+<!--        app:menu="@menu/bottom_navigation_items"></com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
 
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavArgument
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
@@ -25,6 +26,7 @@ class ContainerFragment(val changeFragmentHandler: (Int)->Unit): Fragment() {
         val navController = Navigation.findNavController(view.findViewById(R.id.NavFragmentContainer2))
         val navigationBar = view.findViewById<BottomNavigationView>(R.id.bottomNavigationBar)
         NavigationUI.setupWithNavController(navigationBar,navController)
+//        navController.graph.addArgument("changeFragmentHandler",changeFragmentHandler)
         super.onViewCreated(view, savedInstanceState)
     }
 }

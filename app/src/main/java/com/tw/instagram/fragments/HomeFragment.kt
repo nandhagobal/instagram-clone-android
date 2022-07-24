@@ -21,11 +21,12 @@ class HomeFragment(): Fragment() {
         return inflater.inflate(R.layout.fragment_home,container,false)
     }
 
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//        val messageIcon = view.findViewById<ImageView>(R.id.messengerIcon)
-//        messageIcon.setOnClickListener{
-////            changeFragmentHandler(1)
-//        }
-//    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val changeFragmentHandler =arguments?.get("changeFragmentHandler")
+        val messageIcon = view.findViewById<ImageView>(R.id.messengerIcon)
+        messageIcon.setOnClickListener{
+
+        }
+    }
 }
