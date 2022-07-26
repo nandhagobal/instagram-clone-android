@@ -10,22 +10,26 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.tw.instagram.R
+//import com.tw.instagram.adapters.PostAdapter
+import com.tw.instagram.databinding.FragmentHomeBinding
 
 class HomeFragment(): Fragment() {
+
+     private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_home,container,false)
+        binding = FragmentHomeBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val navController = findNavController()
-        val messageIcon = view.findViewById<ImageView>(R.id.messengerIcon)
-        messageIcon.setOnClickListener{
+//        binding.postRecyclerView.adapter = PostAdapter()
+        binding.messengerIcon.setOnClickListener{
 //            navController.navigate(HomeFragmentDirections.actionHomeFragmentToMessengerFragment2())
         }
     }

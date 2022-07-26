@@ -8,7 +8,8 @@ import retrofit2.http.Query
 
 interface Api {
     @GET("/post")
-    suspend fun getPosts(@Query("page") page:Int,@Query("size") size:Int): PostResponse
+    suspend fun getPosts(@Query("page") page: Int, @Query("size") size: Int): PostResponse
+
     companion object {
         fun create(): Api {
             val retrofit = Retrofit.Builder().baseUrl("http://10.0.2.2:8080")
