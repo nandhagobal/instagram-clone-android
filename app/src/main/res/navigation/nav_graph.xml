@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/pagerFragment">
+    android:id="@+id/nav_graph_1"
+    app:startDestination="@id/homeFragment">
+
     <fragment
-        android:id="@+id/pagerFragment"
-        android:name="com.tw.instagram.fragments.PagerFragment"
-        android:label="PagerFragment" />
+        android:id="@+id/homeFragment"
+        android:name="com.tw.instagram.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_messengerFragment2"
+            app:destination="@id/messengerFragment2" />
+    </fragment>
     <fragment
-        android:id="@+id/messengerFragment"
+        android:id="@+id/exploreFragment"
+        android:name="com.tw.instagram.fragments.ExploreFragment"
+        android:label="ExploreFragment" />
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.tw.instagram.fragments.ActivityFragment"
+        android:label="ActivityFragment" />
+    <fragment
+        android:id="@+id/messengerFragment2"
         android:name="com.tw.instagram.fragments.MessengerFragment"
         android:label="MessengerFragment" />
 </navigation>

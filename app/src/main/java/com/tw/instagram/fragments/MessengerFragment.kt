@@ -29,7 +29,7 @@ class MessengerFragment(val changeFragment: (Int) -> Unit) : Fragment() {
     ): View? {
         return ComposeView(requireContext()).apply {
             setContent {
-                val navController = findNavController()
+//                val navController = findNavController()
                 Box(modifier = Modifier.fillMaxWidth()) {
                 TopAppBar(modifier = Modifier.height(60.dp).fillMaxWidth(), backgroundColor = Color.Transparent, elevation = 0.dp) {
                     IconButton(onClick = {changeFragment(0)}) {

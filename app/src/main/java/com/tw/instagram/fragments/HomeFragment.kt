@@ -23,10 +23,10 @@ class HomeFragment(): Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val changeFragmentHandler =arguments?.get("changeFragmentHandler")
+        val navController = findNavController()
         val messageIcon = view.findViewById<ImageView>(R.id.messengerIcon)
         messageIcon.setOnClickListener{
-
+//            navController.navigate(HomeFragmentDirections.actionHomeFragmentToMessengerFragment2())
         }
     }
 }
