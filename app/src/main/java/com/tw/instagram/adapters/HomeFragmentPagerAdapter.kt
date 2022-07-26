@@ -1,4 +1,4 @@
-package com.tw.instagram
+package com.tw.instagram.adapters
 
 import android.util.Log
 import androidx.fragment.app.Fragment

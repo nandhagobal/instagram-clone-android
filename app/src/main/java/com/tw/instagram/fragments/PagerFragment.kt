@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.tw.instagram.HomeFragmentPagerAdapter
+import com.tw.instagram.adapters.HomeFragmentPagerAdapter
 import com.tw.instagram.R
 
 class PagerFragment : Fragment() {
