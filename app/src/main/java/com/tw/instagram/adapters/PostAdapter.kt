@@ -4,11 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
-import androidx.viewpager.widget.PagerAdapter
 import com.tw.instagram.databinding.FragmentPostHolderBinding
 import com.tw.instagram.fragments.PostHolder
 import com.tw.instagram.models.Post
-import java.util.*
 
 class PostAdapter : PagingDataAdapter<Post, PostHolder>(POST_DIFF_CALLBACK) {
     override fun onBindViewHolder(holder: PostHolder, position: Int) {
@@ -29,15 +27,12 @@ class PostAdapter : PagingDataAdapter<Post, PostHolder>(POST_DIFF_CALLBACK) {
     }
 
     companion object {
-        private val POST_DIFF_CALLBACK = object : DiffUtil.ItemCallback<Post>() {
-            override fun areItemsTheSame(oldItem: Post, newItem: Post): Boolean {
-                return oldItem.id == newItem.id
-            }
+        private val POST_DIFF_CALLBACK =  object : DiffUtil.ItemCallback<Post>() {
+            override fun areItemsTheSame(oldItem: Post, newItem: Post): Boolean =
+                oldItem.id == newItem.id
 
-            override fun areContentsTheSame(oldItem: Post, newItem: Post): Boolean {
-                return oldItem == newItem
-            }
-
+            override fun areContentsTheSame(oldItem: Post, newItem: Post): Boolean =
+                oldItem == newItem
         }
     }
 

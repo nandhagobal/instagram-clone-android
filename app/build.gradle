@@ -60,7 +60,7 @@ dependencies {
     implementation "androidx.paging:paging-guava:$paging_version"
 
     // optional - Jetpack Compose integration
-    implementation "androidx.paging:paging-compose:1.0.0-alpha15"
+    implementation "androidx.paging:paging-compose:1.0.0-alpha13"
 
     implementation "io.insert-koin:koin-core:3.2.0"
 // Koin Test features
@@ -80,6 +80,7 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.1.1'
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     // Java language implementation
     implementation "androidx.navigation:navigation-fragment:$nav_version"

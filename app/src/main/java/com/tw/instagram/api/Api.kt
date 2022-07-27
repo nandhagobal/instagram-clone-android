@@ -12,7 +12,7 @@ interface Api {
 
     companion object {
         fun create(): Api {
-            val retrofit = Retrofit.Builder().baseUrl("http://10.0.2.2:8080")
+            val retrofit = Retrofit.Builder().baseUrl("http://10.0.2.2:8081")
                 .addConverterFactory(GsonConverterFactory.create()).build()
             return retrofit.create(Api::class.java)
         }
