@@ -8,5 +8,6 @@ import org.koin.dsl.module
 
 val homeModule = module{
     single {PostRepository()}
+
     viewModel { HomeViewModel(get()) }
 }
